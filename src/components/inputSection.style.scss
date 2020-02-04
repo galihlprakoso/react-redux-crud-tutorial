@@ -1,0 +1,28 @@
+.InputSection__container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  input, textarea {
+    min-width: 400px;
+    border: solid 1px gray;
+    border-radius: 0.3em;
+    padding: 0.5em;    
+    margin: 0.5em;
+    font-size: 10pt;
+  }  
+
+  .InputSection__container__btnWrapper {
+    display: flex;
+    flex-direction: row;
+    margin-top: 0.5em;
+    button {
+      background-color: black;
+      border: none;
+      color: white;
+      font-size: 10pt;
+      border-radius: 0.3em;
+      padding: 0.5em;
+    }
+  }
+}
