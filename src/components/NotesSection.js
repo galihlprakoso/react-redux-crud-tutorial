@@ -1,12 +1,12 @@
-import React from 'react';
-import { useSelector, useDispatch } from 'react-redux';
+import React, { useContext } from 'react';
 import NoteItem from './NoteItem';
-import inputActions from '../redux/actions/inputActions';
+import AppContext from '../context';
+import inputActions from '../context/actions/inputActions';
 import './NotesSection.style.scss';
 
 const NotesSection = () => {
-  const dispatch = useDispatch();
-  const notes = useSelector(state => state.notes.notes)
+  const { state, dispatch } = useContext(AppContext);
+  const { notes } = state.notes;
 
   const onItemClicked = (item, index) => {
     dispatch(inputActions.setInputId(index));

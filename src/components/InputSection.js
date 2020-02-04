@@ -1,14 +1,12 @@
-import React from 'react';
-import { useDispatch, useSelector } from 'react-redux';
-import noteActions from '../redux/actions/noteActions';
-import inputActions from '../redux/actions/inputActions';
+import React, { useContext } from 'react';
+import AppContext from '../context';
+import noteActions from '../context/actions/noteActions';
+import inputActions from '../context/actions/inputActions';
 import './inputSection.style.scss';
 
 const InputSection = () => {
-  const id = useSelector(state => state.inputs.id);
-  const title = useSelector(state => state.inputs.title);
-  const content = useSelector(state => state.inputs.content);
-  const dispatch = useDispatch();
+  const { state, dispatch } = useContext(AppContext);
+  const { title, content, id } = state.inputs;
 
   const addNote = () => {
     if(title && content) {
