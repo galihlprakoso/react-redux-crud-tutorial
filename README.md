@@ -5,4 +5,4 @@
 This project was created based on my youtube content about how to use redux with reactjs. Together we will learn to implement redux in reactjs by creating a Simple Notes App.
 
 ## Checkout the video on youtube :
-https://youtu.be/8IJ-XvpEcnM
+https://www.youtube.com/watch?v=TXyfJU5mON8
